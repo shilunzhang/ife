@@ -1,22 +1,31 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
+	<header>
 		<title>task_1_1</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<style type="text/css">
-		table tr td,th{border:1px solid #000;}
-		</style>
-	<head>
+		<link rel="stylesheet" href="style.css">
+	</header>
 	<body>
-		<h1>网站一级标题</h1>
-		<ul>
-			<li><a href="http://alice-bob.xyz" target="_blank">导航链接一</a></li>
-			<li><a href="https://www.baidu.com" target="_blank">导航链接二</a></li>
-			<li><a href="https://www.zhihu.com" target="_blank">导航链接三</a></li>
-			<li><a href="https://abc.xyz" target="_blank">导航链接四</a></li>
+	
+		<div id="header">
+			<img src="http://p1.bqimg.com/567571/4320d91d1d3459d5.png" id="baidulog" width="130px" height="70px" />
+		<ul class="daohang">
+			<li><a class="dh" href="http://alice-bob.xyz" target="_blank">导航链接四</a></li>
 		</ul>
-		<!-- more -->
-		<article>
+		<ul class="daohang">
+			<li><a class="dh" href="https://www.baidu.com" target="_blank">导航链接三
+		</a></li>
+		</ul>
+		<ul class="daohang">
+			<li><a class="dh" href="https://www.zhihu.com" target="_blank">导航链接二
+		</a></li>
+		</ul>
+		<ul class="daohang">
+			<li><a class="dh" href="https://abc.xyz" target="_blank">导航链接一</a></li>
+		</ul>
+		</div>
+		
+		<article class="box1" id="firstbox">
 			<h1>文章一级标题</h1>
 			<h2>文章二级标题</h2>
 			<p>张诗伦&nbsp;2017年3月7日<br /><br />
@@ -24,10 +33,10 @@
 			<img src='http://i1.piimg.com/1949/ed620af1c02cd4df.jpg' width="20%" height="20%"><br />
 			
 		</article>
-		<article>
+		<article class="box1">
 			<h1>另一篇文的一级标题</h1>
 			<h2>文章二级标题</h2>
-			<p>Author:Sealon&nbsp;时间<br /><br />
+			Author:Sealon&nbsp;时间<br /><br />
 			又是一文的段落，换行<br />
 			啦啦啦。。<br />
 			<img src='http://i1.piimg.com/1949/ed620af1c02cd4df.jpg' width="20%" height="20%"><br />
@@ -35,27 +44,31 @@
 				<li>列表项目一</li>
 				<li>列表项目二</li>
 			</ul>
-			<div>
+			</article>
+			<article class="box1">
 			<h2>图片</h2>
-				<dl>
-					<dt>航海王</dt>
-					<dd>
+			<dl>
+				<dd>
+				<div class="imgbox">
 					娜美<br />
-					<img src='http://i1.piimg.com/1949/ed620af1c02cd4df.jpg' width="20%" height="20%><br />
-					</dd>
-					<dd>
+					<img src='http://i1.piimg.com/1949/ed620af1c02cd4df.jpg' width="80%"><br />
+				</div>
+				</dd>
+				<dd>
+				<div class="imgbox">
 					娜美<br />
-					<img src='/nami.jpg' alt="img_nami.jpg" width="20%" height="20%">
-					</dd>
-					<dd>
+					<img src='http://i1.piimg.com/1949/ed620af1c02cd4df.jpg' width="80%"><br />
+				</div>
+				</dd>
+				<dd>
+				<div class="imgbox">
 					娜美<br />
-					<img src='http://i1.piimg.com/1949/ed620af1c02cd4df.jpg' width="20%" height="20%/>
-					</dd>
-					</div>
-				</dl>
-			</p>
+					<img src='http://i1.piimg.com/1949/ed620af1c02cd4df.jpg' width="80%">
+				</div>
+				</dd>
+				
 		</article>
-		<article>
+		<article class="box1">
 			<h1>最后一问的一级标题</h1>
 			<h2>文章二级标题</h2>
 			<h3>文章三级标题</h3>
@@ -66,14 +79,16 @@
 				<li>排名2</li>
 			</ol>
 			下面是表格，给表格加了一个border="1"好让你看出是一个表格<br />
-			<table summary="sss">
-				<tbody>
-					<caption>一个表格</caption>
+			<table id="table1">
+				<caption>一个表格</caption>
+				<thead>
 					<tr>
-						<th>表头1</th>
-						<th>表头2</th>
-						<th>表头3</th>
+						<th><span class="thtext">表头1</span></th>
+						<th><span class="thtext">表头2</span></th>
+						<th><span class="thtext">表头3</span></th>
 					</tr>
+				</thead>
+				<tbody>
 					<tr>
 						<td>12</td>
 						<td>32</td>
@@ -90,56 +105,126 @@
 					</tr>
 				</tbody>
 			</table>
-			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
 			</p>
-			
 		</article>
-		<form action="save.php" method="post">
-			请输入邮箱：<input type="address" placeholder="这是一个文本输入框" required="required"/>
-			<br />
+		<div class="box1">
+			<h2 id="celan">这里以后是一个侧栏，这是侧栏的标题</h2>
+			
+			<form action="save.php" method="post" id="form1">
+			<table id="form_table_1">
+			<thead>
+			<th></th>
+			<th></th>
+			</thead>
+			<tbody>
+			<tr>
+			<td class="form_table_text">
+			请输入邮箱地址
+			</td>
+			<td class="form_table_input">
+			<input type="address" placeholder="这是一个文本输入框" />
+			</td>
+			</tr>
+			
+			<tr>
+			<td class="form_table_input">
+			</td>
+			<td>
+			<span class="tip">
 			邮箱地址请按要求格式输入
-			<br />
-			请输入密码：
-			<input type="password" placeholder="这是一个文本输入框" maxlength="12" required="required"/>
-			请重复输入密码：
-			<input type="password" placeholder="这是一个文本输入框" maxlength="12" required="required"/>
-			<br />
+			</span>
+			</td>
+			</tr>
+			
+			<tr>
+			<td class="form_table_text">
+			请输入密码
+			</td>
+			<td class="form_table_input">
+			<input type="password" placeholder="这是一个文本输入框" />
+			</td>
+			</tr>
+			
+			<tr>
+			<td class="form_table_text">
+			请重复输入密码
+			</td>
+			<td class="form_table_input">
+			<input type="password" placeholder="这是一个文本输入框" />
+			</td>
+			</tr>
+			
+			<tr>
+			<td class="form_table_text">
+			</td>
+			<td>
+			<span class="tip">
 			密码请为6-16位英文数字
-			<br />
-			性别：
+			</span>
+			</td>
+			</tr>
+			
+			<tr>
+			<td class="form_table_text">
+			性别
+			</td>
+			<td class="form_table_input">
 			<input type="radio" name="gender" value="1" checked="checked" id="man" />
 			<label for="man">男</label>
 			<input type="radio" name="gender" value="2" id="woman" />
 			<label for="woman">女</label>&nbsp;
-			城市：
+			</td>
+			</tr>
+			
+			<tr>
+			<td class="form_table_text">
+			城市
+			</td>
+			<td class="form_table_input">
 			<select>
 				<option value="1">北京</option>
 				<option value="2" selected="selected">上海</option>
 				<option value="3">深圳</option>
 				<option value="4">杭州</option>
 			</select>
-			爱好：
+			</td>
+			</tr>
+			
+			<tr>
+			<td class="form_table_text">
+			爱好
+			</td>
+			<td class="form_table_input">
 			<input type="checkbox" value="sports" name="aihao" id="sport" />
 			<label for="sport">运动</label>
 			<input type="checkbox" value="arts" name="aihao" id="art" />
 			<label for="art">艺术</label>
 			<input type="checkbox" value="science" name="aihao" id="sci" />
 			<label for="sci">科学</label>
-			<br />
-			个人描述：
-			<textarea rows="7" cols="40" placeholder="这是一个多行输入框，输入您的个人描述">.</textarea>
-			<br />
-			<input type="submit" value="确认提交" name="submitBtn" />
-		</form>
-		
+			</td>
+			</tr>
+			
+			<tr>
+			<td class="form_table_text">
+			个人描述
+			</td>
+			<td class="form_table_input">
+			<textarea	rows="4" cols="100%">这是一个多行输入框，输入您的个人描述</textarea>
+			</td>
+			</tr>
+			
+			<tr>
+			<td colspan="2">
+			<input id="tijiao" type="submit" value="确认提交" name="submitBtn" />
+			</td>
+			</tr>
+			
+			</tbody>
+			</table>
+			</form>
+		</div>
 		<footer>
-			<p>版权所有 &copy;<br />
-			<address>
-			Written by Sealon.<br />
-			email：<a href="mailto:779158969@qq.com?subject=baidu_ife">779158969@qq</a><br />
-			Blog：<a href="http://alice-bob.xyz" target="_blank">alice-bob</a>
-			</address>
-			</p>
+			版权所有  &copy;
 		</footer>
 	</body>
 </html>

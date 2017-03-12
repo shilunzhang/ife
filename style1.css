@@ -1,0 +1,104 @@
+
+/* table spacing */
+
+table {															
+  table-layout: fixed;
+  width: 100%;
+	/*We've coupled this with a width of 100%, meaning that the table will fill any container it is put in*/
+  border-collapse: collapse;
+	/*
+  border: 3px solid purple;
+	
+	*/
+}
+
+thead{
+	background-color: gray;
+	color: White;
+}
+/*fixed 布局在默认情况下，其每列width相等*/
+
+thead th:nth-child(1) { 
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+	border: 1px solid LightGray;
+  
+}
+
+a#baidu:link, a#baidu:visited{
+	padding: 1px 10px;
+	color: #fff;
+	background-color: #555;
+	border-radius: 3px;    /* 将边界设置弧形 */
+	font-family: consolas, serif;
+	/*font-style: normal;*/
+	text-decoration: none;
+}
+
+a#baidu:hover, a#baidu:focus{
+	background-color: #666;
+}
+
+#txt:focus {background-color: #F0FFFF;}
+strong {color: rgba(255, 0, 0, 1);}
+.haha {color: green;}
+#p1 {color: black;}  
+#casc:hover {color: orange; text-decoration: underline;}
+#sty {color: purple;}
+#sh {color: gray;}
+
+div.menu-bar ul ul{
+  display: none;
+}
+
+div.menu-bar li:hover > ul {
+  display: block;
+}
+
+ul, #numbered {
+  border: 1em solid #69b;
+  padding-right:1em;
+}
+
+#parent-div {
+  position: relative;
+  font: bold 200% sans-serif;
+	border: 1px solid;
+}
+
+#forward, #back {
+  position: absolute;
+  margin:0px; /* no margin around the elements */
+}
+
+#forward {
+  color: blue;
+}
+
+#back {
+  color: red;
+}
+
+#fixed-pin{
+	position: fixed;
+	right: 10px;
+	top: 10px;
+}
+
+/*
+Normally, table columns tend to be sized according to how much content they contain, which produces some strange results. With table-layout: fixed, you can size your columns according to the width of their headings, and then deal with their content as appropriate. 
+*/
