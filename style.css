@@ -1,0 +1,156 @@
+body{
+  background-color:LightGray;
+	margin: 0px;
+}
+
+#header{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+#baidulog{
+	display: inline;
+}
+
+.daohang{
+	display: inline-block;
+	position: relative;
+	float: right;
+	right: 10px;
+}
+
+.daohang li {
+	list-style: dot;
+	margin: 0;
+}
+
+a.dh{
+	color: #fff;
+	text-decoration: none;
+}
+
+#table1{
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#table1 thead{
+	background-color: #333333;
+	color: White;
+}
+
+#table1 thead th:nth-child(1){
+	width: 40%;
+}
+
+#table1 thead th:nth-child(2){
+	width: 40%;
+}
+
+#table1 thead th:nth-child(3){
+	width: 20%;
+}
+
+#table1 th, #table1 td{
+	border: 1px solid LightGray;
+	padding: 5px;
+}
+
+#table1 tr:nth-child(3){
+	background-color: LightGray;
+}
+
+.box1{
+	background-color: White;
+	margin: 20px;
+	padding: 20px;
+	border-top:1px solid Gray;
+	border-left:1px solid Gray;
+	border-right:2.5px solid Gray;
+	border-bottom:2.5px solid Gray;
+}
+
+#firstbox{
+	margin: 40px 20px 20px 20px;
+}
+
+.imgbox{
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: 120px;
+	text-align: center;
+	border: 2px solid #ccc;
+}
+
+span.thtext{
+	color: White;
+}
+
+#celan{
+	border-left: 0.2em solid LightGray;
+	padding: 0.5em;
+}
+
+span.tip{
+	text-align: left;
+	color: Gray;
+	display: block;
+}
+
+#form_table_1{
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+#form_table_1 th:nth-child(1){
+	padding: 0;
+	width: 30%;
+}
+
+#form_table_1 th:nth-child(2){
+	padding: 0;
+	width: 70%;
+}
+
+#form_table_1 tr td{
+	padding: 10px;
+}
+
+td.form_table_text{
+	text-align: right;
+}
+
+td.form_table_input{
+	text-align: left;
+}
+
+#form1{
+	text-align:center;
+}
+
+#tijiao{
+	font-size: 1em;
+	color: white;
+	background-color: #27408B;
+	width:100%;
+	padding: 0.6em;
+	margin: 10px;
+	border: 0;
+	border-radius: 5px;
+}
+
+footer{
+	text-align: center;
+	background-color: black;
+	color: White;
+	margin: 0px;
+	padding: 20px;
+}
+
